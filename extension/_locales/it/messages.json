@@ -1,0 +1,23 @@
+{
+  "extDescription": {
+    "message": "Comprime la striscia di «highlights» spoiler nel lettore video di SRF Play, così i risultati sportivi non vengono svelati. Attivazione con un clic."
+  },
+  "actionTitle": {
+    "message": "SpoilerRemovalFairy - nascondi gli highlights"
+  },
+  "popupSubtitle": {
+    "message": "SRF Play senza spoiler"
+  },
+  "toggleLabel": {
+    "message": "Nascondi la barra degli highlights"
+  },
+  "stateOn": {
+    "message": "Attivo"
+  },
+  "stateOff": {
+    "message": "Disattivato"
+  },
+  "note": {
+    "message": "Comprime la striscia di highlights spoiler nel lettore video su srf.ch/play, così i risultati sportivi non vengono svelati. Le modifiche si applicano subito, senza ricaricare."
+  }
+}

@@ -1,0 +1,49 @@
+/*
+ * SRF Play – Hide Highlights Bar
+ *
+ * The spoiler strip below the video is the SRG "Letterbox" (Video.js) player's
+ * subdivisions/segments bar — rendered INSIDE the player's fixed 16:9 box, with
+ * goal/score thumbnails. The skin reserves vertical space for it via the custom
+ * property  --segment-height  and shrinks the video:
+ *
+ *     .vjs-srgssr-skin.srgssr-has-subdivisions .vjs-tech { height: calc(100% - var(--segment-height)); }
+ *     .srgssr-subdivisions { height: var(--segment-height); }
+ *
+ * That reserved height is why `display:none` on the strip alone leaves a black
+ * band: the video stays shrunk. So we ALSO force --segment-height to 0, which
+ * makes the video fill the box again (calc(100% - 0) = 100%) and collapses the
+ * strip, the control-bar offset and the end-screen padding that depend on it.
+ *
+ * The player bundle never uses `!important` anywhere, so these `!important`
+ * declarations reliably win over its inline / styled-component values.
+ *
+ * Everything is gated on <html data-srf-hh="on"> so the toolbar toggle can
+ * reveal the strip again instantly, without a page reload.
+ */
+
+/* Collapse the reserved space. Declared on the skin root AND on the consuming
+   elements, so it wins regardless of which node carries the inline value. */
+html[data-srf-hh="on"] .vjs-srgssr-skin,
+html[data-srf-hh="on"] .video-js,
+html[data-srf-hh="on"] .vjs-tech,
+html[data-srf-hh="on"] .vjs-poster,
+html[data-srf-hh="on"] .vjs-srgssr-overlay,
+html[data-srf-hh="on"] .vjs-control-bar,
+html[data-srf-hh="on"] .srgssr-subdivisions,
+html[data-srf-hh="on"] .srgssr-subdivisions__arrow {
+  --segment-height: 0px !important;
+}
+
+/* Remove the strip itself (covers both the videojs div.class and, defensively,
+   a custom-element tag form). */
+html[data-srf-hh="on"] .srgssr-subdivisions,
+html[data-srf-hh="on"] srgssr-subdivisions {
+  display: none !important;
+}
+
+/* Belt-and-braces: keep the video at full height even if a future build changes
+   how the variable is wired up. */
+html[data-srf-hh="on"] .srgssr-has-subdivisions .vjs-tech,
+html[data-srf-hh="on"] .srgssr-has-subdivisions .vjs-poster {
+  height: 100% !important;
+}

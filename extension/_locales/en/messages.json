@@ -1,0 +1,23 @@
+{
+  "extDescription": {
+    "message": "Collapses the spoiler “highlights” strip inside the SRF Play video player so sports results aren't spoiled. One-click toggle."
+  },
+  "actionTitle": {
+    "message": "SpoilerRemovalFairy - hide highlights"
+  },
+  "popupSubtitle": {
+    "message": "Spoiler-free SRF Play"
+  },
+  "toggleLabel": {
+    "message": "Hide highlights bar"
+  },
+  "stateOn": {
+    "message": "On"
+  },
+  "stateOff": {
+    "message": "Off"
+  },
+  "note": {
+    "message": "Collapses the spoiler highlights strip inside the video player on srf.ch/play so sports results aren't spoiled. Changes apply immediately - no reload needed."
+  }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="popup.css" />
+    <title>SpoilerRemovalFairy</title>
+  </head>
+  <body>
+    <div class="card">
+      <div class="head">
+        <img class="logo" src="icons/icon48.png" alt="" width="30" height="30" />
+        <div class="titles">
+          <h1>SpoilerRemovalFairy</h1>
+          <p data-i18n="popupSubtitle">Spoiler-free SRF Play</p>
+        </div>
+      </div>
+
+      <label class="row" for="toggle">
+        <span class="label">
+          <span class="label-main" data-i18n="toggleLabel">Hide highlights bar</span>
+          <span class="label-sub" id="state-text">On</span>
+        </span>
+        <span class="switch">
+          <input type="checkbox" id="toggle" checked />
+          <span class="slider" aria-hidden="true"></span>
+        </span>
+      </label>
+
+      <p class="note" id="note" data-i18n="note">
+        Collapses the spoiler highlights strip inside the video player on
+        srf.ch/play so sports results aren't spoiled. Changes apply immediately —
+        no reload needed.
+      </p>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

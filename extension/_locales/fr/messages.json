@@ -1,0 +1,23 @@
+{
+  "extDescription": {
+    "message": "Réduit la bande de « highlights » qui spoile dans le lecteur vidéo de SRF Play, pour ne pas dévoiler les résultats sportifs. Activation en un clic."
+  },
+  "actionTitle": {
+    "message": "SpoilerRemovalFairy - masquer les highlights"
+  },
+  "popupSubtitle": {
+    "message": "SRF Play sans spoilers"
+  },
+  "toggleLabel": {
+    "message": "Masquer la barre des highlights"
+  },
+  "stateOn": {
+    "message": "Activé"
+  },
+  "stateOff": {
+    "message": "Désactivé"
+  },
+  "note": {
+    "message": "Réduit la bande de highlights qui spoile dans le lecteur vidéo sur srf.ch/play, pour ne pas dévoiler les résultats sportifs. Les changements s'appliquent immédiatement, sans rechargement."
+  }
+}
