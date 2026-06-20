@@ -11,8 +11,6 @@ language).
 
 Works in **Chrome**, **Firefox**, and **Safari** from a single source.
 
-<img src="extension/icons/icon128.png" width="96" alt="SpoilerRemovalFairy icon" />
-
 ---
 
 ## How it works
