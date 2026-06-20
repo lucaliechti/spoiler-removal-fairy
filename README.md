@@ -84,3 +84,11 @@ via **Develop → Allow Unsigned Extensions**).
 
 The Chrome zip has `browser_specific_settings` stripped (Chrome warns on it);
 the Firefox zip keeps the required `gecko` id.
+
+---
+
+## Disclaimer
+
+This is an unofficial, independent project. It is **not affiliated with,
+endorsed by, or connected to SRF (Schweizer Radio und Fernsehen), the SRG SSR,
+or SRF Play** in any way. All trademarks belong to their respective owners.

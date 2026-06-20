@@ -3,7 +3,7 @@
     "message": "Blendet den Spoiler-Highlights-Streifen im Videoplayer von SRF Play aus, damit Sportresultate nicht verraten werden. Umschalten mit einem Klick."
   },
   "actionTitle": {
-    "message": "SpoilerRemovalFairy - Highlights ausblenden"
+    "message": "Spoiler Removal Fairy - Highlights ausblenden"
   },
   "popupSubtitle": {
     "message": "SRF Play ohne Spoiler"
@@ -18,6 +18,9 @@
     "message": "Aus"
   },
   "note": {
-    "message": "Blendet den Spoiler-Highlights-Streifen im Videoplayer auf srf.ch/play aus, damit Sportresultate nicht verraten werden. Änderungen wirken sofort - kein Neuladen nötig."
+    "message": "Kein Neuladen nötig."
+  },
+  "disclaimer": {
+    "message": "Steht in keiner Verbindung zu SRF und wird nicht von SRF unterstützt."
   }
 }
